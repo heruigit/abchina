@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
-  if (shExpMatch(host, "www.baidu.com"))
+  if (shExpMatch(host, "*.baidu.com"))
     {
-        return "PROXY 47.95.112.255:7777";
+        return "PROXY 10.1.70.162:8888";
     }
   
   return "DIRECT";
