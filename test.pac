@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-  if (shExpMatch(host, "*.baidu.com"))
+  if (shExpMatch(host, "enjoy.abchina.com"))
     {
         return "PROXY 10.1.70.162:8888";
     }
