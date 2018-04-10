@@ -1,7 +1,16 @@
 function FindProxyForURL(url, host) {
   if (shExpMatch(host, "enjoy.abchina.com"))
     {
-        return "PROXY 47.95.112.255:7777";
+      if(shExpMatch(url, "https://enjoy.abchina.com/yh-web/rights/rightsdetails")){
+          return "PROXY 47.95.112.255:7777";
+      }
+      if(shExpMatch(url, "https://enjoy.abchina.com/yh-web/customer/info/")){
+          return "PROXY 47.95.112.255:7777";
+      }
+      if(shExpMatch(url, "https://enjoy.abchina.com/yh-web/customer/choose")){
+          return "PROXY 47.95.112.255:7777";
+      }
+      return "DIRECT";  
     }
   
   return "DIRECT";
