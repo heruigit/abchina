@@ -3,23 +3,23 @@ author = "herui"
 description = "my test pcf"
 
 # 用户配置（Profile）
-[PROFILE.guangfa]
-name = "guangfa"
+[PROFILE.ecitic]
+name = "ecitic"
 defaultRoute = "DIRECT"
-proxy = "95508"
+proxy = "ecitic"
 rulesets = [
-    "95508"
+    "ecitic"
 ]
 
 # 代理（Proxy）
-[PROXY.95508]
+[PROXY.ecitic]
 type = "HTTP"
-host = "10.1.70.162"
-port = 8888
+host = "47.95.112.255"
+port = 7771
 
 # 规则集（Ruleset）
-[RULESET.95508]
-name = "guangfa rules"
+[RULESET.ecitic]
+name = "ecitic rules"
 rules = [
-    "DOMAIN-MATCH, 8.95508.com, PROXY"
+    "DOMAIN-MATCH, s.creditcard.ecitic.com, PROXY"
 ]
